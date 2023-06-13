@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_POST['submit'])) {
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     include_once '../Database/Database.php';
     include_once '../Model/TodoList.php';
@@ -11,5 +11,5 @@ if(isset($_POST['submit'])) {
     $createTodo = new Controller\TodoListController($name);
     $createTodo->store();
 
-    header('Location: ../index.php?error=success');
+    header('Location: ../index.php?status=success');
 }
