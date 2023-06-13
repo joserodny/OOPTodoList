@@ -59,7 +59,7 @@ include 'includes/autoload.php';
                                 </div>
                                 <form action="includes/deletetodolist.php" method="POST">
                                     
-                                <button type="submit" name="submit" class="flex text-red-500 border-2 border-red-500 p-2 rounded-lg">
+                                <button class="flex text-red-500 border-2 border-red-500 p-2 rounded-lg">
                                     <input type="hidden" name="id" value="<?php echo $todo['id'] ?>" />
                                     <svg class="h-6 w-6 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <circle cx="12" cy="12" r="10" />

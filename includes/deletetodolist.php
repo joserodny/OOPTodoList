@@ -1,6 +1,6 @@
 <?php
 
-    if(isset($_POST['submit'])) {
+    if($_SERVER['REQUEST_METHOD'] == 'POST') {
         include_once '../Database/Database.php';
         include_once '../Model/TodoList.php';
         include_once '../Controller/TodoListController.php';
